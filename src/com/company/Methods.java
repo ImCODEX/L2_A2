@@ -7,7 +7,7 @@ public class Methods {
      * @param array: array of numbers
      * @return: maximum
      */
-    public int max_nr(int[] array){
+    public int maxNr(int[] array){
         int max = 0;
         for (int j : array)
             if (j > max)
@@ -20,7 +20,7 @@ public class Methods {
      * @param array: array of numbers
      * @return: minimum
      */
-    public int min_nr(int[] array){
+    public int minNr(int[] array){
         int min = Integer.MAX_VALUE;
         for (int j : array)
             if (j < min)
@@ -33,8 +33,8 @@ public class Methods {
      * @param array: array of numbers
      * @return: maximum sum
      */
-    public int max_sum(int[] array){
-        int min = min_nr(array), sum=0;
+    public int maxSum(int[] array){
+        int min = minNr(array), sum=0;
         for (int j : array)
             if (j != min)
                 sum += j;
@@ -47,8 +47,8 @@ public class Methods {
      * @param array: array of numbers
      * @return: minimum sum
      */
-    public int min_sum(int[] array){
-        int max = max_nr(array), sum=0;
+    public int minSum(int[] array){
+        int max = maxNr(array), sum=0;
         for (int j : array)
             if (j != max)
                 sum += j;
